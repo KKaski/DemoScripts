@@ -3,6 +3,11 @@
 #CFtoKubernetes
 Purpose of this demo script is to show how to do put existing CF app to run in the Kubernetes cluster at IBM Cloud
 
+##Prereq
+Install the IBM Cloud command line tools
+https://console.bluemix.net/docs/cli/index.html#overview
+
+
 ##Foundation
 1. Create example node.js app cft0kubex
 2. Enable CI for the app 
@@ -44,5 +49,5 @@ Purpose of this demo script is to show how to do put existing CF app to run in t
 3. Check the images in the image repository bx cr images
 4. go to the ./char/cftokube3 directory
 5. edit values.yaml and correct the namespace and tag information to relate your image
-6. hel install ./chart/cftokube3
+6. helm install ./chart/cftokube3
 
