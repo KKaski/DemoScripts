@@ -16,9 +16,9 @@ ONBOOT=yes
 2. Instal prereqs and get ICP installation container
 ```
 sudo sysctl -w vm.max_map_count=262144
-sudo yum install -y wget
-wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-17.09.1.ce-1.el7.centos.x86_64.rpm
-sudo yum install -y docker-ce-17.09.1.ce-1.el7.centos.x86_64.rpm
+sudo yum instal -y wget yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo install docker
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker pull ibmcom/icp-inception:2.1.0.2
