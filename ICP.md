@@ -16,7 +16,7 @@ ONBOOT=yes
 2. Instal prereqs and get ICP installation container
 ```
 sudo sysctl -w vm.max_map_count=262144
-sudo yum instal -y wget yum-utils
+sudo yum install -y wget yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo install docker
 sudo systemctl start docker
