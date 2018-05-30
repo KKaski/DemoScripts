@@ -21,10 +21,10 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo install docker
 sudo systemctl start docker
 sudo systemctl enable docker
-sudo docker pull ibmcom/icp-inception:2.1.0.2
-mkdir /opt/ibm-cloud-private-ce-2.1.0.2
-cd /opt/ibm-cloud-private-ce-2.1.0.2
-sudo docker run -e LICENSE=accept -v "$(pwd)":/data ibmcom/icp-inception:2.1.0.2 cp -r cluster /data
+sudo docker pull ibmcom/icp-inception:2.1.0.3
+mkdir /opt/ibm-cloud-private-ce-2.1.0.3
+cd /opt/ibm-cloud-private-ce-2.1.0.3
+sudo docker run -e LICENSE=accept -v "$(pwd)":/data ibmcom/icp-inception:2.1.0.3 cp -r cluster /data
 
 sudo ssh-keygen -b 4096 -f ~/.ssh/id_rsa -N ""
 sudo cat ~/.ssh/id_rsa.pub | sudo tee -a ~/.ssh/authorized_keys
@@ -45,7 +45,7 @@ vi /etc/hosts
 3. Configuration and installation
 Add your host ip to ICP hosts file
 ```
-cd /opt/ibm-cloud-private-ce-2.1.0.2/cluster
+cd /opt/ibm-cloud-private-ce-2.1.0.3/cluster
 vi hosts
 ```
 
@@ -56,7 +56,7 @@ firewall_enabled: true
 ```
 4. Install ICP
 ```
-sudo docker run -e LICENSE=accept --net=host -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:2.1.0.2 install
+sudo docker run -e LICENSE=accept --net=host -t -v "$(pwd)":/installer/cluster ibmcom/icp-inception:2.1.0.3 install
 ```
 
 ## Demo Application Creation
