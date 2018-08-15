@@ -17,8 +17,9 @@ ONBOOT=yes
 ```
 sudo sysctl -w vm.max_map_count=262144
 sudo yum install -y wget yum-utils
+sudo yum install yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo install docker
+sudo yum install docker
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker pull ibmcom/icp-inception:2.1.0.3
