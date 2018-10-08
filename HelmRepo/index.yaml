@@ -3,11 +3,25 @@ entries:
   node-red:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-12T18:11:34.424695739+03:00
+    created: 2018-10-08T21:11:42.882472215+03:00
     description: A Helm chart for Kubernetes
     digest: 6cc900acdcc99aec5abafae63a8d232bd65a2bddf8bb8a546df850bf976eb988
     name: node-red
     urls:
     - https://raw.githubusercontent.com/KKaski/DemoScripts/master/HelmRepo/node-red-0.1.1.tgz
     version: 0.1.1
-generated: 2018-05-12T18:11:34.422083806+03:00
+  openwhisk:
+  - apiVersion: v1
+    created: 2018-10-08T21:11:42.88346829+03:00
+    description: A Helm chart to deploy Apache OpenWhisk for Kubernetes
+    digest: c8220f2e3b8775fff6d512d268bb94039b3ebb2197f3c2188547a8fa5f761131
+    keywords:
+    - Apache OpenWhisk
+    maintainers:
+    - email: dev@openwhisk.apache.org
+      name: Apache OpenWhisk committers
+    name: openwhisk
+    urls:
+    - https://raw.githubusercontent.com/KKaski/DemoScripts/master/HelmRepo/openwhisk-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-10-08T21:11:42.881412262+03:00
